@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root{
+    --altura-secao: 100vh;
+    --texto-font: "Inter", sans-serif;
+    --titulo-color:#FFFFFF;
+    --pe-texto-color:#C0C0C0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #00020b;
+}
+
+.conteudo__p1{
+    height: var(--altura-secao);
+    background-image: url(../assets/Background.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    align-items:start;
+}
+.conteudo__p1__assinatura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0% 0% 6%;;
+    gap: 54px;
+    width: 40%;
+}
+.conteudo__p1__assinatura__d1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+.conteudo__p1__assinatura__titulo{
+    color: var(--titulo-color);
+    font-family: var(--texto-font);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.conteudo__p1__assinatura__img{
+    width: 348px;
+}
+.conteudo__p1__assinatura__d2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+.conteudo__p1__assinatura__link{
+    font-family: var(--texto-font);
+    padding: 16px;
+    width: 512px;
+    border: #FFFFFF 1px solid;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+.conteudo__p1__assinatura__link:hover{
+    background-color: #167BF7;
+    border: #167BF7 1px solid;
+}
+.conteudo__p1__assinatura__texto{
+    font-family: var(--texto-font);
+    font-size: 12px;
+    color: var(--pe-texto-color);
+}
+
+.conteudo__p2{
+    height: var(--altura-secao);
+    background-color: green;
+}
+
+.conteudo__p3{
+    height: var(--altura-secao);
+    background-color: yellow;
+}
+
+.conteudo__p4{
+    height: var(--altura-secao);
+    background-color: blue;
+}
+
+.conteudo__p5{
+    height: var(--altura-secao);
+    background-color: pink;;
+}
