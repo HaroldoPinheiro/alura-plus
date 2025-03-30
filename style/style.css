@@ -5,6 +5,7 @@
     --altura-secao: 100vh;
     --texto-font: "Inter", sans-serif;
     --titulo-color:#FFFFFF;
+    --texto-color:#F9F9F9;
     --pe-texto-color:#C0C0C0;
 }
 
@@ -16,6 +17,19 @@
 body{
     background-color: #00020b;
 }
+.titulo{
+    font-family: var(--texto-font);
+    font-weight: 600;
+    font-size: 3em;
+    color: var(--titulo-color);
+}
+.texto{
+    font-family: var(--texto-font);
+    font-size: 1em;
+    color:var(--texto-color);
+}
+
+
 
 .conteudo__p1{
     height: var(--altura-secao);
@@ -44,7 +58,7 @@ body{
 .conteudo__p1__assinatura__titulo{
     color: var(--titulo-color);
     font-family: var(--texto-font);
-    font-size: 28px;
+    font-size: 1.75em;
     font-weight: 600;
     text-align: center;
 }
@@ -62,37 +76,159 @@ body{
     font-family: var(--texto-font);
     padding: 16px;
     width: 512px;
-    border: #FFFFFF 1px solid;
+    background-color: #167BF7;
+    border: #167BF7 1px solid;
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
 }
 .conteudo__p1__assinatura__link:hover{
-    background-color: #167BF7;
-    border: #167BF7 1px solid;
+    background-color: rgba(0, 0, 0, 0);
+    border: #FFFFFF 1px solid;
 }
 .conteudo__p1__assinatura__texto{
     font-family: var(--texto-font);
-    font-size: 12px;
+    font-size: 0.75em;
     color: var(--pe-texto-color);
 }
 
+
+
 .conteudo__p2{
     height: var(--altura-secao);
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 69px;
 }
+.conteudo__p2__img{
+    width: 34%;
+}
+.conteudo__p2__texto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+
 
 .conteudo__p3{
     height: var(--altura-secao);
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
 }
+.conteudo__p3__texto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+.conteudo__p3__link{
+    font-family: var(--texto-font);
+    padding: 16px;
+    width: 163px;
+    background-color: #167BF7;
+    border: #167BF7 1px solid;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+.conteudo__p3__link:hover{
+    border: #FFFFFF 1px solid;
+    background-color: rgba(0, 0, 0, 0);
+}
+.conteudo__p3__img{
+    width: 33%;
+}
+
+
 
 .conteudo__p4{
     height: var(--altura-secao);
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
 }
+.conteudo__p4__img{
+    width: 37%;
+}
+.conteudo__p4__texto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
 
 .conteudo__p5{
     height: var(--altura-secao);
-    background-color: pink;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 145px;
+}
+.conteudo__p5__d1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 78%;
+}
+.conteudo__p5__d1__dispositivos{
+    display: flex;
+    gap: 69px;
+}
+.conteudo__p5__d1__dispositivos__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.conteudo__p5__d1__dispositivos__img{
+    width: 339px;
+}
+.conteudo__p5__d1__dispositivos__titulo{
+    font-family: var(--texto-font);
+    color: var(--titulo-color);
+    font-size: 2em;
+    font-weight: 600;
+}
+.conteudo__p5__d2{
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+}
+.conteudo__p5__d2__img{
+    width: 7%;
+}
+.conteudo__p5__d2__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.conteudo__p5__d2__texto__sub{
+    display: flex;
+    gap: 16px;
+}
+.conteudo__p5__d2__texto__sub__titulo{
+    font-family: var(--texto-font);
+    font-size: 1em;
+    color: var(--titulo-color)
+}
+.conteudo__p5__d2__texto__rodape{
+    font-family: var(--texto-font);
+    color:var(--pe-texto-color);
+    font-size: 0.875em;
+    text-align: center;
 }
