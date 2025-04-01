@@ -7,6 +7,7 @@
     --titulo-color:#FFFFFF;
     --texto-color:#F9F9F9;
     --pe-texto-color:#C0C0C0;
+    --botao-color: #167BF7;
 }
 
 *{
@@ -16,12 +17,18 @@
 
 body{
     background-color: #00020b;
+    color: var(--titulo-color);
+}
+.conteudo{
+    height: var(--altura-secao);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
 }
 .titulo{
     font-family: var(--texto-font);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3em;
-    color: var(--titulo-color);
 }
 .texto{
     font-family: var(--texto-font);
@@ -31,59 +38,43 @@ body{
 
 
 
-.conteudo__p1{
-    height: var(--altura-secao);
+.background__p1{
     background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
     background-position: right top;
-    display: flex;
-    align-items:start;
 }
 .conteudo__p1__assinatura{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10% 0% 0% 6%;;
-    gap: 54px;
-    width: 40%;
-}
-.conteudo__p1__assinatura__d1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 22px;
+    text-align: center;
+    margin: 0% 0% 0% 12%;;
+    padding: 10px;
+    width: 82%;
 }
 .conteudo__p1__assinatura__titulo{
-    color: var(--titulo-color);
     font-family: var(--texto-font);
     font-size: 1.75em;
-    font-weight: 600;
-    text-align: center;
+    font-weight: 700;
 }
 .conteudo__p1__assinatura__img{
+    margin: 22px 0px 54px 0;
     width: 348px;
-}
-.conteudo__p1__assinatura__d2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:16px;
 }
 .conteudo__p1__assinatura__link{
     font-family: var(--texto-font);
+    display: block;
     padding: 16px;
     width: 512px;
-    background-color: #167BF7;
-    border: #167BF7 1px solid;
+    margin: 0 0 16px 0;
+    background-color: var(--botao-color);
+    border: var(--botao-color) 1px solid;
     border-radius: 8px;
     text-decoration: none;
-    text-align: center;
 }
 .conteudo__p1__assinatura__link:hover{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border: #FFFFFF 1px solid;
 }
 .conteudo__p1__assinatura__texto{
@@ -94,18 +85,12 @@ body{
 
 
 
-.conteudo__p2{
-    height: var(--altura-secao);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 69px;
-}
 .conteudo__p2__img{
-    width: 34%;
+    margin: auto;
+    width: 68%;
 }
 .conteudo__p2__texto{
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap:8px;
@@ -113,25 +98,19 @@ body{
 
 
 
-.conteudo__p3{
-    height: var(--altura-secao);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
 .conteudo__p3__texto{
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 16px
+    margin: auto;
+    gap: 16px;
 }
 .conteudo__p3__link{
     font-family: var(--texto-font);
     padding: 16px;
     width: 163px;
-    background-color: #167BF7;
-    border: #167BF7 1px solid;
+    background-color: var(--botao-color);
+    border: var(--botao-color) 1px solid;
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
@@ -141,23 +120,18 @@ body{
     background-color: rgba(0, 0, 0, 0);
 }
 .conteudo__p3__img{
-    width: 33%;
+    width: 66%;
+    margin: auto;
 }
 
 
 
-.conteudo__p4{
-    height: var(--altura-secao);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 44px;
-}
 .conteudo__p4__img{
-    width: 37%;
+    width: 74%;
+    margin: auto;
 }
 .conteudo__p4__texto{
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -197,7 +171,6 @@ body{
 }
 .conteudo__p5__d1__dispositivos__titulo{
     font-family: var(--texto-font);
-    color: var(--titulo-color);
     font-size: 2em;
     font-weight: 600;
 }
@@ -224,7 +197,6 @@ body{
 .conteudo__p5__d2__texto__sub__titulo{
     font-family: var(--texto-font);
     font-size: 1em;
-    color: var(--titulo-color)
 }
 .conteudo__p5__d2__texto__rodape{
     font-family: var(--texto-font);
