@@ -193,7 +193,6 @@ body{
 }
 .conteudo__p5__d2__texto__sub{
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
 }
 .conteudo__p5__d2__texto__sub__titulo{
@@ -214,7 +213,7 @@ body{
         flex-direction: column;
         height: auto;
         padding: 5%;
-        margin: 10% 5%;
+        margin: 5% 1%;
         justify-content: center;
         align-items: center;
         gap: 30px
@@ -228,8 +227,7 @@ body{
     }
 
     .conteudo__p3__link{
-        padding: 16px;
-        width: 61%;
+        width: 65%;
     }
 
     .conteudo__p5{
@@ -242,5 +240,9 @@ body{
     }
     .conteudo__p5__d2__img{
         width: 30%;
+    }
+    .conteudo__p5__d2__texto__sub{
+        flex-direction: column;
+        text-align: center;
     }
 }
