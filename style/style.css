@@ -11,6 +11,7 @@
 }
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -66,7 +67,7 @@ body{
     font-family: var(--texto-font);
     display: block;
     padding: 16px;
-    width: 512px;
+    width: 85%;
     margin: 0 0 16px 0;
     background-color: var(--botao-color);
     border: var(--botao-color) 1px solid;
@@ -108,7 +109,7 @@ body{
 .conteudo__p3__link{
     font-family: var(--texto-font);
     padding: 16px;
-    width: 163px;
+    width: 28%;
     background-color: var(--botao-color);
     border: var(--botao-color) 1px solid;
     border-radius: 8px;
@@ -192,6 +193,7 @@ body{
 }
 .conteudo__p5__d2__texto__sub{
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .conteudo__p5__d2__texto__sub__titulo{
@@ -203,4 +205,42 @@ body{
     color:var(--pe-texto-color);
     font-size: 0.875em;
     text-align: center;
+
+}
+
+@media (max-width: 1024px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+        margin: 10% 5%;
+        justify-content: center;
+        align-items: center;
+        gap: 30px
+    }
+    .background__p1{
+        background-image: none;
+    }
+    .conteudo__p1__assinatura{
+        margin: 0%;
+        width: auto;
+    }
+
+    .conteudo__p3__link{
+        padding: 16px;
+        width: 61%;
+    }
+
+    .conteudo__p5{
+        height: auto;
+        margin: 10% 6%;
+        gap: 50px;
+    }
+    .conteudo__p5__d1__dispositivos{
+        flex-direction: column;
+    }
+    .conteudo__p5__d2__img{
+        width: 30%;
+    }
 }
